@@ -8,9 +8,13 @@ Internal YellowPages is a secure, company-wide business directory application de
 
 📇 Detailed Profiles - Comprehensive business unit profiles with contact information, services, and team members
 📊 Organizational Hierarchy - Visual representation of department structures
+
 📍 Location Mapping - Office locations, floor plans, and seating arrangements
+
 📱 Responsive Design - Accessible from desktop, tablet, and mobile devices
+
 🔒 Secure Access - Role-based permissions and SSO integration
+
 🔄 Real-time Updates - Automatic sync with HR systems (optional)
 
 📞 Support
