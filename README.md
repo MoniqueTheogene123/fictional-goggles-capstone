@@ -1,9 +1,10 @@
 # Click Connect - Business Directory
 
 📋 Overview
-Internal YellowPages is a secure, company-wide business directory application designed to help employees quickly find internal teams, departments, and business contacts within the organization. This application serves as a centralized hub for discovering internal resources and expertise.
+Click Connect is a secure, company-wide business directory application designed to help employees quickly find internal teams, departments, and business contacts within the organization. This application serves as a centralized hub for discovering internal resources and expertise.
 
 ✨ Features
+
 🔍 Advanced Search - Find teams, departments, or employees by name, skills, or keywords
 
 📇 Detailed Profiles - Comprehensive business unit profiles with contact information, services, and team members
