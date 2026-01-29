@@ -7,6 +7,7 @@ Internal YellowPages is a secure, company-wide business directory application de
 🔍 Advanced Search - Find teams, departments, or employees by name, skills, or keywords
 
 📇 Detailed Profiles - Comprehensive business unit profiles with contact information, services, and team members
+
 📊 Organizational Hierarchy - Visual representation of department structures
 
 📍 Location Mapping - Office locations, floor plans, and seating arrangements
