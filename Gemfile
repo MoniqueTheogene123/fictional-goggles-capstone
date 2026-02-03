@@ -86,7 +86,6 @@ group :development do
   gem "haikunator"
   gem "pry-rails"
   gem "rails_db", "~> 2.5.0"
-  gem "rails-erd"
   gem "rufo"
 end
 
