@@ -1,0 +1,96 @@
+<h1>
+  Skill #<%= @the_skill.id %> details
+</h1>
+
+<article>
+  <div>
+    <a href="/skills">
+      Go back
+    </a>
+  </div>
+
+  <div>
+    <a href="/delete_skill/<%= @the_skill.id %>">
+      Delete skill
+    </a>
+  </div>
+  <dl>
+    <dt>
+      Industry
+    </dt>
+    <dd>
+      <%= @the_skill.industry_id %>
+    </dd>
+
+    <dt>
+      Industries
+    </dt>
+    <dd>
+      <%= @the_skill.industries_id %>
+    </dd>
+
+    <dt>
+      Users
+    </dt>
+    <dd>
+      <%= @the_skill.users_id %>
+    </dd>
+
+    <dt>
+      Created at
+    </dt>
+    <dd>
+      <%= time_ago_in_words(@the_skill.created_at) %> ago
+    </dd>
+
+    <dt>
+      Updated at
+    </dt>
+    <dd>
+      <%= time_ago_in_words(@the_skill.updated_at) %> ago
+    </dd>
+  </dl>
+</article>
+
+<hr>
+
+
+<article>
+  <header>
+    <h2>
+      Edit skill
+    </h2>
+  </header>
+
+  <form action="/modify_skill/<%= @the_skill.id %>"  method="post" >
+    <div>
+      <label for="industry_id_box">
+        Industry
+      </label>
+
+      <input type="text" id="industry_id_box" name="query_industry_id" value="<%= @the_skill.industry_id %>">
+    </div>
+
+    <div>
+      <label for="industries_id_box">
+        Industries
+      </label>
+
+      <input type="text" id="industries_id_box" name="query_industries_id" value="<%= @the_skill.industries_id %>">
+    </div>
+
+    <div>
+      <label for="users_id_box">
+        Users
+      </label>
+
+      <input type="text" id="users_id_box" name="query_users_id" value="<%= @the_skill.users_id %>">
+    </div>
+
+    <button type="submit">
+      Update skill
+    </button>
+  </form>
+</article>
+
+<hr>

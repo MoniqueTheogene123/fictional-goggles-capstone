@@ -1,0 +1,43 @@
+<h1>
+  List of all industries
+</h1>
+
+<hr>
+
+<article>
+  <header>
+    <h2>
+      Add a new industry
+    </h2>
+  </header>
+
+  <form action="/insert_industry" method="post">
+    <div>
+      <label for="skills_id_box">
+        Skills
+      </label>
+
+      <input type="text" id="skills_id_box" name="query_skills_id">
+    </div>
+
+    <button type="submit">
+      Create industry
+    </button>
+  </form>
+</article>
+
+<hr>
+
+<article>
+  <ul>
+    <% @list_of_industries.each do |an_industry| %>
+      <li>
+        <a href="/industries/<%= an_industry.id %>">
+          Industry #<%= an_industry.id %>
+        </a>
+      </li>
+    <% end %>
+  </ul>
+</article>
+
+<hr>

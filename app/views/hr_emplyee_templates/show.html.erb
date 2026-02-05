@@ -1,0 +1,231 @@
+<h1>
+  Hr emplyee #<%= @the_hr_emplyee.id %> details
+</h1>
+
+<article>
+  <div>
+    <a href="/hr_emplyees">
+      Go back
+    </a>
+  </div>
+
+  <div>
+    <a href="/delete_hr_emplyee/<%= @the_hr_emplyee.id %>">
+      Delete hr emplyee
+    </a>
+  </div>
+  <dl>
+    <dt>
+      F name
+    </dt>
+    <dd>
+      <%= @the_hr_emplyee.f_name %>
+    </dd>
+
+    <dt>
+      L name
+    </dt>
+    <dd>
+      <%= @the_hr_emplyee.l_name %>
+    </dd>
+
+    <dt>
+      Job title
+    </dt>
+    <dd>
+      <%= @the_hr_emplyee.job_title %>
+    </dd>
+
+    <dt>
+      Department
+    </dt>
+    <dd>
+      <%= @the_hr_emplyee.department %>
+    </dd>
+
+    <dt>
+      Location
+    </dt>
+    <dd>
+      <%= @the_hr_emplyee.location %>
+    </dd>
+
+    <dt>
+      Email
+    </dt>
+    <dd>
+      <%= @the_hr_emplyee.email %>
+    </dd>
+
+    <dt>
+      Phone
+    </dt>
+    <dd>
+      <%= @the_hr_emplyee.phone %>
+    </dd>
+
+    <dt>
+      Manager
+    </dt>
+    <dd>
+      <%= @the_hr_emplyee.manager_id %>
+    </dd>
+
+    <dt>
+      Team
+    </dt>
+    <dd>
+      <%= @the_hr_emplyee.team %>
+    </dd>
+
+    <dt>
+      Im handle
+    </dt>
+    <dd>
+      <%= @the_hr_emplyee.im_handle %>
+    </dd>
+
+    <dt>
+      Users
+    </dt>
+    <dd>
+      <%= @the_hr_emplyee.users_id %>
+    </dd>
+
+    <dt>
+      Users count
+    </dt>
+    <dd>
+      <%= @the_hr_emplyee.users_count %>
+    </dd>
+
+    <dt>
+      Created at
+    </dt>
+    <dd>
+      <%= time_ago_in_words(@the_hr_emplyee.created_at) %> ago
+    </dd>
+
+    <dt>
+      Updated at
+    </dt>
+    <dd>
+      <%= time_ago_in_words(@the_hr_emplyee.updated_at) %> ago
+    </dd>
+  </dl>
+</article>
+
+<hr>
+
+
+<article>
+  <header>
+    <h2>
+      Edit hr emplyee
+    </h2>
+  </header>
+
+  <form action="/modify_hr_emplyee/<%= @the_hr_emplyee.id %>"  method="post" >
+    <div>
+      <label for="f_name_box">
+        F name
+      </label>
+
+      <input type="text" id="f_name_box" name="query_f_name" value="<%= @the_hr_emplyee.f_name %>">
+    </div>
+
+    <div>
+      <label for="l_name_box">
+        L name
+      </label>
+
+      <input type="text" id="l_name_box" name="query_l_name" value="<%= @the_hr_emplyee.l_name %>">
+    </div>
+
+    <div>
+      <label for="job_title_box">
+        Job title
+      </label>
+
+      <input type="text" id="job_title_box" name="query_job_title" value="<%= @the_hr_emplyee.job_title %>">
+    </div>
+
+    <div>
+      <label for="department_box">
+        Department
+      </label>
+
+      <input type="text" id="department_box" name="query_department" value="<%= @the_hr_emplyee.department %>">
+    </div>
+
+    <div>
+      <label for="location_box">
+        Location
+      </label>
+
+      <input type="text" id="location_box" name="query_location" value="<%= @the_hr_emplyee.location %>">
+    </div>
+
+    <div>
+      <label for="email_box">
+        Email
+      </label>
+
+      <input type="text" id="email_box" name="query_email" value="<%= @the_hr_emplyee.email %>">
+    </div>
+
+    <div>
+      <label for="phone_box">
+        Phone
+      </label>
+
+      <input type="text" id="phone_box" name="query_phone" value="<%= @the_hr_emplyee.phone %>">
+    </div>
+
+    <div>
+      <label for="manager_id_box">
+        Manager
+      </label>
+
+      <input type="text" id="manager_id_box" name="query_manager_id" value="<%= @the_hr_emplyee.manager_id %>">
+    </div>
+
+    <div>
+      <label for="team_box">
+        Team
+      </label>
+
+      <input type="text" id="team_box" name="query_team" value="<%= @the_hr_emplyee.team %>">
+    </div>
+
+    <div>
+      <label for="im_handle_box">
+        Im handle
+      </label>
+
+      <input type="text" id="im_handle_box" name="query_im_handle" value="<%= @the_hr_emplyee.im_handle %>">
+    </div>
+
+    <div>
+      <label for="users_id_box">
+        Users
+      </label>
+
+      <input type="text" id="users_id_box" name="query_users_id" value="<%= @the_hr_emplyee.users_id %>">
+    </div>
+
+    <div>
+      <label for="users_count_box">
+        Users count
+      </label>
+
+      <input type="text" id="users_count_box" name="query_users_count" value="<%= @the_hr_emplyee.users_count %>">
+    </div>
+
+    <button type="submit">
+      Update hr emplyee
+    </button>
+  </form>
+</article>
+
+<hr>

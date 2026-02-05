@@ -1,0 +1,131 @@
+<h1>
+  List of all hr emplyees
+</h1>
+
+<hr>
+
+<article>
+  <header>
+    <h2>
+      Add a new hr emplyee
+    </h2>
+  </header>
+
+  <form action="/insert_hr_emplyee" method="post">
+    <div>
+      <label for="f_name_box">
+        F name
+      </label>
+
+      <input type="text" id="f_name_box" name="query_f_name">
+    </div>
+
+    <div>
+      <label for="l_name_box">
+        L name
+      </label>
+
+      <input type="text" id="l_name_box" name="query_l_name">
+    </div>
+
+    <div>
+      <label for="job_title_box">
+        Job title
+      </label>
+
+      <input type="text" id="job_title_box" name="query_job_title">
+    </div>
+
+    <div>
+      <label for="department_box">
+        Department
+      </label>
+
+      <input type="text" id="department_box" name="query_department">
+    </div>
+
+    <div>
+      <label for="location_box">
+        Location
+      </label>
+
+      <input type="text" id="location_box" name="query_location">
+    </div>
+
+    <div>
+      <label for="email_box">
+        Email
+      </label>
+
+      <input type="text" id="email_box" name="query_email">
+    </div>
+
+    <div>
+      <label for="phone_box">
+        Phone
+      </label>
+
+      <input type="text" id="phone_box" name="query_phone">
+    </div>
+
+    <div>
+      <label for="manager_id_box">
+        Manager
+      </label>
+
+      <input type="text" id="manager_id_box" name="query_manager_id">
+    </div>
+
+    <div>
+      <label for="team_box">
+        Team
+      </label>
+
+      <input type="text" id="team_box" name="query_team">
+    </div>
+
+    <div>
+      <label for="im_handle_box">
+        Im handle
+      </label>
+
+      <input type="text" id="im_handle_box" name="query_im_handle">
+    </div>
+
+    <div>
+      <label for="users_id_box">
+        Users
+      </label>
+
+      <input type="text" id="users_id_box" name="query_users_id">
+    </div>
+
+    <div>
+      <label for="users_count_box">
+        Users count
+      </label>
+
+      <input type="text" id="users_count_box" name="query_users_count">
+    </div>
+
+    <button type="submit">
+      Create hr emplyee
+    </button>
+  </form>
+</article>
+
+<hr>
+
+<article>
+  <ul>
+    <% @list_of_hr_emplyees.each do |a_hr_emplyee| %>
+      <li>
+        <a href="/hr_emplyees/<%= a_hr_emplyee.id %>">
+          Hr emplyee #<%= a_hr_emplyee.id %>
+        </a>
+      </li>
+    <% end %>
+  </ul>
+</article>
+
+<hr>

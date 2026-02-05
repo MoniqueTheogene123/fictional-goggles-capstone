@@ -1,0 +1,59 @@
+<h1>
+  List of all skills
+</h1>
+
+<hr>
+
+<article>
+  <header>
+    <h2>
+      Add a new skill
+    </h2>
+  </header>
+
+  <form action="/insert_skill" method="post">
+    <div>
+      <label for="industry_id_box">
+        Industry
+      </label>
+
+      <input type="text" id="industry_id_box" name="query_industry_id">
+    </div>
+
+    <div>
+      <label for="industries_id_box">
+        Industries
+      </label>
+
+      <input type="text" id="industries_id_box" name="query_industries_id">
+    </div>
+
+    <div>
+      <label for="users_id_box">
+        Users
+      </label>
+
+      <input type="text" id="users_id_box" name="query_users_id">
+    </div>
+
+    <button type="submit">
+      Create skill
+    </button>
+  </form>
+</article>
+
+<hr>
+
+<article>
+  <ul>
+    <% @list_of_skills.each do |a_skill| %>
+      <li>
+        <a href="/skills/<%= a_skill.id %>">
+          Skill #<%= a_skill.id %>
+        </a>
+      </li>
+    <% end %>
+  </ul>
+</article>
+
+<hr>
