@@ -87,6 +87,7 @@ group :development do
   gem "pry-rails"
   gem "rails_db", "~> 2.5.0"
   gem "rufo"
+  gem "devise"
 end
 
 group :development, :test do
