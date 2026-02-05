@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
   # Routes for the Industry resource:
+  # 
+  root to: "home#index"
 
   # CREATE
   post("/insert_industry", { :controller => "industries", :action => "create" })
